@@ -1,16 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Fetching Git Commits</h1>
+  <GitCommits></GitCommits>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GitCommits from './components/GitCommits.vue'
+// const Vue = window.vue;
+// import axios from "axios";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    GitCommits
+  },
+
 }
 </script>
 
