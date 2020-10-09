@@ -43,7 +43,6 @@ export default {
       axios.get('https://api.github.com/repos/mh-technologies/fetch-git-commits/commits')
         .then(function (response) {
           self.commits = response.data;
-          console.log(response.data);
         })
         .catch(function () {
 
