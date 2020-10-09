@@ -1,5 +1,6 @@
 <template>
-  <h1>Fetching Git Commits</h1>
+  <h1>Fetching Git Commits For Repo "fetch-git-commits"</h1>
+  <p>Simple application for fetching the commits message and commit URLs.</p>
   <GitCommits></GitCommits>
 </template>
 

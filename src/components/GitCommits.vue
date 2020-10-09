@@ -31,7 +31,8 @@ export default {
   name: 'GitCommits',
   data(){
     return {
-      commits : []
+      commits : [],
+      repo: ''
     }
   },
   mounted() {
@@ -41,12 +42,12 @@ export default {
     fetchData(){
       var self = this;
       axios.get('https://api.github.com/repos/mh-technologies/fetch-git-commits/commits')
-        .then(function (response) {
-          self.commits = response.data;
-        })
-        .catch(function () {
+      .then(function (response) {
+        self.commits = response.data;
+      })
+      .catch(function () {
 
-        })
+      })
     }
   }
 }
