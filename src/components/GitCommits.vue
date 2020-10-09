@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="commits">
     <table class="table">
       <thead>
       <tr>
@@ -14,10 +14,13 @@
         <th scope="row">{{commit_data.author.login}}</th>
         <td>{{commit_data.commit.message}}</td>
         <td>{{ commit_data.commit.author.date }}</td>
-        <td><a target="_blank" :href="commit_data.html_url">Commit URL</a></td>
+        <td><a target="_blank" :href="commit_data.html_url">View Commit</a></td>
       </tr>
       </tbody>
     </table>
+  </div>
+  <div v-else>
+    <h3>No commits were found</h3>
   </div>
 </template>
 
